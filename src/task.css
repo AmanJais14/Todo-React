@@ -1,0 +1,128 @@
+/* Task.css */
+
+/* Overall container styling */
+.task-container {
+    
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Input field styling */
+.input-field {
+    color-scheme:  light ;
+    width: calc(100% - 24px);
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Add task button styling */
+.add-task-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-task-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.add-task-button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+/* List styling */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task item styling */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+/* Task name styling */
+.task-name {
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.task-name.done {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Button styling */
+.task-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button colors */
+.mark-done-button {
+    background-color: #28a745;
+}
+
+.mark-done-button:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+.mark-done-button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+.delete-button:active {
+    background-color: #bd2130;
+    transform: translateY(0);
+}
